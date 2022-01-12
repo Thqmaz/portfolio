@@ -1,57 +1,73 @@
 import React from 'react'
 import '../../assets/css/HomeScreen.css'
 
+const openFileMenu = () => {
+    document.getElementById("fileDropdown").classList.toggle("show");
+}
+const openEditMenu = () => {
+    document.getElementById("editDropdown").classList.toggle("show");
+}
+const openViewMenu = () => {
+    document.getElementById("viewDropdown").classList.toggle("show");
+}
+const openSearchMenu = () => {
+    document.getElementById("searchDropdown").classList.toggle("show");
+}
+const openHelpMenu = () => {
+    document.getElementById("helpDropdown").classList.toggle("show");
+}
+
 const HomeScreen = () => {
     return (
         <>
-            <div class="container">
-                <div class="header">
+            <div className="container">
+                <div className="header">
 
                 </div>
-                <div class="sidebar">
+                <div className="sidebar">
 
                 </div>
-                <div class="terminalContainer">
-                    <div class="terminal">
-                        <div class="terminalHeading">
-                            <div class="top">
+                <div className="terminalContainer">
+                    <div className="terminal">
+                        <div className="terminalHeading">
+                            <div className="top">
                                 <div>
-                                    <span class="title">guest@thomasgroenendijk.nl: ~</span>
+                                    <span className="title">guest@thomasgroenendijk.nl: ~</span>
                                 </div>
-                                <div class="buttons">
-                                    <div class="btn closeBtn"></div>
-                                    <div class="btn minBtn"></div>
-                                    <div class="btn maxBtn"></div>
+                                <div className="buttons">
+                                    <div className="btn closeBtn"></div>
+                                    <div className="btn minBtn"></div>
+                                    <div className="btn maxBtn"></div>
                                 </div>
                             </div>
-                            <div class="bottom">
-                                <div class="buttons">
-                                    <div class="btn fileBtn" onclick="openFileMenu()">File</div>
-                                    <div id="fileDropdown" class="dropdown-content file">
+                            <div className="bottom">
+                                <div className="buttons">
+                                    <div className="btn fileBtn" onClick={openFileMenu}>File</div>
+                                    <div id="fileDropdown" className="dropdown-content file">
                                         <a href="#home">Home</a>
                                         <a href="#about">About</a>
                                         <a href="#contact">Contact</a>
                                     </div>
-                                    <div class="btn editBtn" onclick="openEditMenu()">Edit</div>
-                                    <div id="editDropdown" class="dropdown-content edit">
+                                    <div className="btn editBtn" onClick={openEditMenu}>Edit</div>
+                                    <div id="editDropdown" className="dropdown-content edit">
                                         <a href="/login">Login</a>
                                         <a href="/register">Registreer</a>
                                         <a href="/setusername">Gebruikersnaam instellen</a>
                                     </div>
-                                    <div class="btn viewBtn" onclick="openViewMenu()">View</div>
-                                    <div id="viewDropdown" class="dropdown-content view">
+                                    <div className="btn viewBtn" onClick={openViewMenu}>View</div>
+                                    <div id="viewDropdown" className="dropdown-content view">
                                         <a href="#home">Home</a>
                                         <a href="#about">About</a>
                                         <a href="#contact">Contact</a>
                                     </div>
-                                    <div class="btn searchBtn" onclick="openSearchMenu()">Search</div>
-                                    <div id="searchDropdown" class="dropdown-content search">
+                                    <div className="btn searchBtn" onClick={openSearchMenu}>Search</div>
+                                    <div id="searchDropdown" className="dropdown-content search">
                                         <a href="#home">Home</a>
                                         <a href="#about">About</a>
                                         <a href="#contact">Contact</a>
                                     </div>
-                                    <div class="btn helpBtn" onclick="openHelpMenu()">Help</div>
-                                    <div id="helpDropdown" class="dropdown-content help">
+                                    <div className="btn helpBtn" onClick={openHelpMenu}>Help</div>
+                                    <div id="helpDropdown" className="dropdown-content help">
                                         <a href="#home">Home</a>
                                         <a href="#about">About</a>
                                         <a href="#contact">Contact</a>
