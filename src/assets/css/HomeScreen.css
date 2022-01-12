@@ -30,6 +30,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     background: url("../img/loading.png");
+    background-size: cover;
 }
 
 .loader {
@@ -42,11 +43,7 @@ body {
     animation: loader 2s infinite ease;
 }
 
-/**
- * ==============================================
- * Dot Flashing
- * ==============================================
- */
+
 .loading-dots {
     position: relative;
     width: 10px;
@@ -254,19 +251,19 @@ body {
 }
 
 .dropdown-content.edit {
-    margin-left: 38px;
+    margin-left: 34px;
 }
 
 .dropdown-content.view {
-    margin-left: 82px;
+    margin-left: 75px;
 }
 
 .dropdown-content.search {
-    margin-left: 134px;
+    margin-left: 123px;
 }
 
 .dropdown-content.help {
-    margin-left: 198px;
+    margin-left: 183px;
 }
 
 .dropdown-content a {
